@@ -12,6 +12,9 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.FullScreen">
+
+        </activity>
+        <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +23,22 @@
         </activity>
         <activity
             android:name=".RegisterActivity"
-            android:theme="@style/AppTheme.FullScreen"></activity>
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".NewCallGen"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".NewCall1"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".NewCall2"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".NewCall3"
+            android:theme="@style/AppTheme.FullScreen" />
     </application>
 
 </manifest>

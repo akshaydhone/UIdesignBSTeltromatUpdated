@@ -8,4 +8,6 @@
     <color name="colorPurpleT">#64983cff</color>
     <color name="colorBlue">#2FB4FF</color>
     <color name="colorBlueT">#642fb4ff</color>
+    <color name="gradientStart">#19AA8B</color>
+    <color name="gradientStop">#23A7D8</color>
 </resources>
