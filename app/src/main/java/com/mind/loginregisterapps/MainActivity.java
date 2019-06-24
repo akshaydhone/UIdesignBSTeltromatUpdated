@@ -32,7 +32,7 @@ private RelativeLayout texthome;
         texthome = (RelativeLayout) findViewById(R.id.texthome);
         frombottom = AnimationUtils.loadAnimation(this, R.anim.frombottom);
         btRegister  = findViewById(R.id.btRegister);
-        tvLogin     = findViewById(R.id.tvLogin);
+        tvLogin = findViewById(R.id.tvLogin);
         b1=(Button)findViewById(R.id.b1);
 
 

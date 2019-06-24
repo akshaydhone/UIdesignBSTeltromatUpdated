@@ -9,11 +9,11 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="189dp"
-        android:layout_height="107dp"
+        android:layout_width="263dp"
+        android:layout_height="130dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="82dp"
+        android:layout_marginStart="43dp"
         android:layout_marginTop="283dp"
         android:src="@drawable/icon" />
 
