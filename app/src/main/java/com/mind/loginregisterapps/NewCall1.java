@@ -11,7 +11,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class NewCall1 extends AppCompatActivity {
-    EditText e1,e2,e3,e4,e5;
+    EditText e1,e2,e3,e4;
     Button b1;
     Spinner s1;
 
@@ -26,13 +26,16 @@ public class NewCall1 extends AppCompatActivity {
         e2=(EditText)findViewById(R.id.e2);
         e3=(EditText)findViewById(R.id.e3);
         e4=(EditText)findViewById(R.id.e4);
-        e5=(EditText)findViewById(R.id.e5);
+
         s1=(Spinner)findViewById(R.id.s1);
         b1=(Button)findViewById(R.id.b1);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(e1.getText().toString().trim().length()==0)
+
+                Intent i=new Intent(NewCall1.this,NewCall2.class);
+                startActivity(i);
+                /*if(e1.getText().toString().trim().length()==0)
                 {
                     e1.setError("Email not entered");
                     e1.requestFocus();
@@ -55,11 +58,7 @@ public class NewCall1 extends AppCompatActivity {
                     Toast.makeText(NewCall1.this, "Please select a product", Toast.LENGTH_SHORT).show();
                 }
 
-                /*if(e4.getText().toString().trim().length()==0)
-                {
-                    e4.setError("Product serial No. not entered");
-                    e4.requestFocus();
-                }*/
+
 
           else if(e4.getText().toString().trim().equals(""))
                 {
@@ -72,9 +71,8 @@ public class NewCall1 extends AppCompatActivity {
 
 
                 else{
-                    Intent i=new Intent(NewCall1.this,NewCall2.class);
-                    startActivity(i);
-                }
+
+                }*/
             }
         });
     }

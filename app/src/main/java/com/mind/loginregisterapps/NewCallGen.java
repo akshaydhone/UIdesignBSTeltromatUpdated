@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class NewCallGen extends AppCompatActivity {
     Button b1;
-    EditText e1,e2,e3,e4,e5;
+    EditText e1,e2,e3,e4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,13 +21,13 @@ public class NewCallGen extends AppCompatActivity {
         e2=(EditText)findViewById(R.id.e2);
         e3=(EditText)findViewById(R.id.e3);
         e4=(EditText)findViewById(R.id.e4);
-        e5=(EditText)findViewById(R.id.e5);
+
         b1=(Button)findViewById(R.id.b1);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(e1.getText().toString().trim().length()==0)
+                /*if(e1.getText().toString().trim().length()==0)
                 {
                     e1.setError("City not entered");
                     e1.requestFocus();
@@ -45,26 +45,22 @@ public class NewCallGen extends AppCompatActivity {
                     e3.setError("Client's Name not entered");
                     e3.requestFocus();
                 }
-               else if(e5.getText().toString().trim().length()==0)
-                {
-                    e5.setError("Contact not entered");
-                    e5.requestFocus();
-                }
+
 
             else if(e4.getText().toString().trim().length()==0)
                 {
                     e4.setError("Address not entered");
                     e4.requestFocus();
-                }
+                }*/
+
+                Intent i=new Intent(NewCallGen.this,NewCall1.class);
+                startActivity(i);
 
 
 
+                /*else{
 
-
-                else{
-                    Intent i=new Intent(NewCallGen.this,NewCall1.class);
-                    startActivity(i);
-                }
+                }*/
 
             }
         });
