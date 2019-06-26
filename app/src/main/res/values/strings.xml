@@ -4,7 +4,7 @@
     <string name="tag_prompt1">Choose a Tag</string>
 
     <string-array name="tag_arrays1">
-        <item>Select a Product</item>
+        <item>Select</item>
         <item>Printer</item>
         <item>Xerox machine</item>
         <item>CPU</item>
@@ -27,7 +27,6 @@
 
 
     </string-array>
-
 
 
     <string name="tag_prompt3">Choose a Tag</string>

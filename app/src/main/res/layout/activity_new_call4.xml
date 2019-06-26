@@ -4,53 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:id="@+id/texthome"
-    android:layout_gravity="center"
-    tools:context=".Main2Activity">
-
+    tools:context=".NewCall4">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/bgHeader"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:elevation="5dp"
-        android:theme="@style/ToolbarTheme" />
+        android:layout_height="75dp"
+
+        android:theme="@style/ToolbarTheme"
+        android:elevation="5dp" />
 
     <TextView
         android:id="@+id/tvSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="126dp"
+        android:layout_marginTop="40dp"
         android:elevation="10dp"
-        android:text="Welcome"
+        android:transitionName="tvLogin"
+        android:text="Service Report"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:transitionName="tvLogin" />
-
-    <ImageView
-        android:id="@+id/circle1"
-        android:layout_width="134dp"
-        android:layout_height="134dp"
-        android:layout_below="@+id/bgHeader"
-        android:layout_marginLeft="-25dp"
-        android:layout_marginTop="-5dp"
-         />
-
-    <ImageView
-        android:id="@+id/circle3"
-        android:layout_width="182dp"
-        android:layout_height="182dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="-80dp"
-        android:layout_marginBottom="-30dp"
-       />
+        android:textStyle="bold" />
 
 
     <ScrollView
@@ -76,13 +51,75 @@
                     android:orientation="vertical"
                     android:paddingBottom="50dp">
 
-                    <Button
-                        android:id="@+id/b1"
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:background="@drawable/bg_btn"
-                        android:text="New Call Generation"
+                        android:text="Client's Photo"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/im1"
+                        android:layout_width="249dp"
+                        android:layout_height="87dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/cli" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Payment To:"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Acc No:3456xxxx9087"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Payment Via"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/s1"
+
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:entries="@array/tag_arrays3"
+
+                        android:prompt="@string/tag_prompt3" />
+
+
+
+
+
+
+                    <Button
+                        android:id="@+id/b1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_ui"
+                        android:text="Save"
+                        android:layout_gravity="center"
+
                         android:textAllCaps="false"
                         android:textColor="@color/colorWhite"
                         android:textStyle="bold" />
@@ -90,26 +127,22 @@
 
                     <Button
                         android:id="@+id/b2"
-                        android:layout_width="match_parent"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:background="@drawable/bg_btn"
-                        android:text="Previous Call Generation"
+                        android:background="@drawable/bg_ui"
+                        android:text="Submit"
+                        android:layout_gravity="center"
                         android:textAllCaps="false"
                         android:textColor="@color/colorWhite"
                         android:textStyle="bold" />
 
 
-                    <Button
-                        android:id="@+id/b3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/bg_btn"
-                        android:text="Pending Call Reports"
-                        android:textAllCaps="false"
-                        android:textColor="@color/colorWhite"
-                        android:textStyle="bold" />
+
+
+
+
+
 
 
                 </LinearLayout>
@@ -128,9 +161,15 @@
 
 
 
+
+
+
+
+
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
+
 
     <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
@@ -138,6 +177,5 @@
         android:id="@+id/bottom_nav"
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_nav_menu"/>
-
 
 </RelativeLayout>

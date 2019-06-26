@@ -25,8 +25,8 @@ public class NewCall2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_call2);
 
-//        getSupportActionBar().setTitle("New  Call");
-  //      getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+      getSupportActionBar().setTitle("New  Call Generation");
+       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         s1 = (Spinner) findViewById(R.id.s1);
         e1=(EditText)findViewById(R.id.e1);
         e2=(EditText)findViewById(R.id.e2);

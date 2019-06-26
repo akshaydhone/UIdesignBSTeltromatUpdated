@@ -17,9 +17,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity {
 
-    private ImageButton btRegister;
+   // private ImageButton btRegister;
     private TextView tvLogin;
 private RelativeLayout texthome;
     private Button b1;
@@ -29,59 +29,25 @@ private RelativeLayout texthome;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("Login");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         texthome = (RelativeLayout) findViewById(R.id.texthome);
         frombottom = AnimationUtils.loadAnimation(this, R.anim.frombottom);
-        btRegister  = findViewById(R.id.btRegister);
-        tvLogin = findViewById(R.id.tvLogin);
+        //btRegister  = findViewById(R.id.btRegister);
+
         b1=(Button)findViewById(R.id.b1);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(i);
+            }
+        });
 
 
-b1.setOnClickListener(this);
 
-        btRegister.setOnClickListener(this);
+
+//        btRegister.setOnClickListener(this);
     }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    @Override
-    public void onClick(View v) {
-        if (v==btRegister){
-            Intent intent   = new Intent(MainActivity.this,RegisterActivity.class);
-            Pair[] pairs    = new Pair[1];
-            pairs[0] = new Pair<View,String>(tvLogin,"tvLogin");
-            ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
-            startActivity(intent,activityOptions.toBundle());
-        }
-
-
-
-        if (v==b1){
-            Intent intent   = new Intent(MainActivity.this,Main2Activity.class);
-            Pair[] pairs    = new Pair[1];
-            pairs[0] = new Pair<View,String>(tvLogin,"tvLogin");
-
-            ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
-            startActivity(intent,activityOptions.toBundle());
-
-
-
-        }
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

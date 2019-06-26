@@ -15,8 +15,8 @@ public class NewCallGen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_call_gen);
-//        getSupportActionBar().setTitle("New  Call");
-  //      getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    getSupportActionBar().setTitle("New  Call Generation");
+       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         e1=(EditText)findViewById(R.id.e1);
         e2=(EditText)findViewById(R.id.e2);
         e3=(EditText)findViewById(R.id.e3);
