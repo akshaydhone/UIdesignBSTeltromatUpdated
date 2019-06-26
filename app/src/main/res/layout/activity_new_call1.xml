@@ -52,7 +52,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingBottom="50dp">
+                    android:paddingBottom="50dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+                    <requestFocus />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -69,6 +72,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:id="@+id/e1"
+
                         android:inputType="phone" />
 
                     <TextView
@@ -86,6 +90,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:id="@+id/e2"
+
                         android:inputType="textEmailAddress" />
 
                     <TextView
@@ -103,6 +108,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:id="@+id/e3"
+
                         android:inputType="date" />
 
                     <TextView
@@ -120,6 +126,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:id="@+id/e4"
+
                         android:inputType="time" />
 
 
