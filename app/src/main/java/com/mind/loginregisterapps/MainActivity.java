@@ -19,9 +19,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-   // private ImageButton btRegister;
+    // private ImageButton btRegister;
     private TextView tvLogin;
-private RelativeLayout texthome;
+    private RelativeLayout texthome;
     private Button b1;
     private Animation frombottom;
 
